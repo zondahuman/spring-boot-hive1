@@ -6,11 +6,11 @@ server:
       tomcat.uri-encoding: UTF-8
 
 hive:
-    url: jdbc:hive2://172.16.0.10:10000/default
+    url: jdbc:hive2://172.16.2.134:10000/default
     driver-class-name: org.apache.hive.jdbc.HiveDriver
     type: com.alibaba.druid.pool.DruidDataSource
-    username: hive
-    password: hive
+    username:     # hive
+    password:     # hive
 
 spring:
       devtools:

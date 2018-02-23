@@ -11,11 +11,14 @@ march action
 * http://blog.csdn.net/lnho2015/article/details/51307438
 
 
+# Hive Command
+*  切换数据库的时候可以输入：use database_name；
+*  查看所有数据库的时候可以输入：show databases;
+*  查看所有表的时候可以输入：show tables
+*  看表结构的时候可以输入：describe tab_name;
 
-
-
-
-
+# Hive Start
+[root@localhost bin]$ ./hive --service hiveserver2
 
 
 
