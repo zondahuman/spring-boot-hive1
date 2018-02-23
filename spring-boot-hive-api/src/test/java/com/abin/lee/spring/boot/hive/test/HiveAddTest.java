@@ -21,8 +21,7 @@ import java.util.List;
  * com.abin.lee.elasticsearch.svr.api.test
  */
 public class HiveAddTest {
-    private static final String httpURL = "http://localhost:8099/hive/create";
-//    private static final String httpURL = "http://localhost:8099/hive/HiveAddTest";
+    private static final String httpURL = "http://localhost:8099/hive/insert";
 
     @Test
     public void testHiveAdd() {
