@@ -35,8 +35,8 @@ public class HiveController {
         StringBuffer sql = new StringBuffer("create table IF NOT EXISTS ");
         sql.append("HIVE_TEST");
         sql.append("(KEY INT, VALUE STRING)");
-        sql.append("PARTITIONED BY (CTIME DATE)"); // 分区存储
-        sql.append("ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' "); // 定义分隔符
+//        sql.append("PARTITIONED BY (CTIME DATE)"); // 分区存储
+//        sql.append("ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' "); // 定义分隔符
         sql.append("STORED AS TEXTFILE"); // 作为文本存储
         // drop table
         // StringBuffer sql = new StringBuffer("DROP TABLE IF EXISTS ");
@@ -76,7 +76,6 @@ public class HiveController {
         hiveJdbcTemplate.execute(sql.toString());
         return "Done";
     }
-
 
 
 
